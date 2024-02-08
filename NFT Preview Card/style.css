@@ -1,0 +1,120 @@
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Outfit", sans-serif;
+}
+img {
+  max-width: 100%;
+}
+p {
+  color: #8bacda;
+}
+a {
+  text-decoration: none;
+  color: white;
+}
+a:hover {
+  color: #00fff7;
+}
+body {
+  background-color: #0d192b;
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+main {
+  width: 350px;
+  background-color: #14253d;
+  padding: 25px;
+  border-radius: 15px;
+  box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 2px, rgba(0, 0, 0, 0.07) 0px 2px 4px,
+    rgba(0, 0, 0, 0.07) 0px 4px 8px, rgba(0, 0, 0, 0.07) 0px 8px 16px,
+    rgba(0, 0, 0, 0.07) 0px 16px 32px, rgba(0, 0, 0, 0.07) 0px 32px 64px;
+}
+.image_wrapper {
+  position: relative;
+  overflow: hidden;
+  border-radius: 10px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.image_wrapper img {
+  display: block;
+}
+.image_wrapper span.overlay {
+  position: absolute;
+  display: none;
+  width: 100%;
+  height: 100%;
+  background-color: #00fff7;
+  top: 0;
+  opacity: 0.4;
+}
+.image_wrapper img.icon {
+  position: absolute;
+  display: none;
+}
+.image_wrapper:hover span.overlay {
+  display: block;
+}
+.image_wrapper:hover img.icon {
+  display: block;
+}
+.article_wrapper h2 {
+  font-size: 20px;
+  font-weight: 600;
+  margin-top: 25px;
+}
+.article_wrapper p {
+  font-weight: 300;
+  line-height: 1.5em;
+  margin-top: 15px;
+}
+.status_bar {
+  padding: 25px 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid #8bacda;
+}
+.status_bar .ethereum {
+  display: flex;
+}
+.status_bar .ethereum p {
+  font-weight: 600;
+  color: #00fff7;
+  margin-left: 5px;
+}
+.status_bar .timer {
+  display: flex;
+}
+.status_bar .timer p {
+  margin-left: 5px;
+}
+main .profile {
+  margin-top: 15px;
+  display: flex;
+  align-items: center;
+}
+main .profile img {
+  width: 34px;
+  border: 1px solid white;
+  border-radius: 100%;
+}
+main .profile p {
+  margin-left: 15px;
+}
+@media only screen and (max-width: 576px) {
+  body {
+    align-items: flex-start;
+  }
+  main {
+    margin: 40px 20px;
+  }
+}
