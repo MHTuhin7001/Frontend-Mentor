@@ -1,0 +1,100 @@
+@import url("https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@100..900&family=Lexend+Deca:wght@100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@100..900&display=swap");
+:root {
+  /* Fonts */
+  --primaryFont: "Big Shoulders Display", sans-serif;
+  --secFont: "Lexend Deca", sans-serif;
+  /* Colors */
+  --brightOrange: hsl(31, 77%, 52%);
+  --darkCyan: hsl(184, 100%, 22%);
+  --veryDarkCyan: hsl(179, 100%, 13%);
+  --transparentWhite: hsla(0, 0%, 100%, 0.75);
+  --veryLightGray: hsl(0, 0%, 95%);
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+a {
+  text-decoration: none;
+}
+body {
+  width: 100%;
+  min-height: 100vh;
+  background: var(--veryLightGray);
+  font-size: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+main {
+  width: 920px;
+  display: flex;
+  flex-direction: row;
+}
+main .col {
+  padding: 50px;
+}
+main .column_one {
+  background-color: var(--brightOrange);
+  border-radius: 10px 0 0 10px;
+}
+main .column_two {
+  background-color: var(--darkCyan);
+}
+main .column_three {
+  background-color: var(--veryDarkCyan);
+  border-radius: 0 10px 10px 0;
+}
+main .col h2 {
+  font-family: var(--primaryFont);
+  font-size: 39px;
+  font-weight: 700;
+  color: var(--veryLightGray);
+  margin: 35px 0 30px 0;
+}
+main .col p {
+  font-family: var(--secFont);
+  line-height: 1.75em;
+  color: var(--transparentWhite);
+  opacity: 0.9;
+}
+main .col a {
+  display: inline-block;
+  font-family: var(--secFont);
+  border: 2px solid var(--veryLightGray);
+  background-color: var(--veryLightGray);
+  border-radius: 30px;
+  padding: 13px 28px;
+  margin-top: 75px;
+}
+main .col a:hover {
+  background-color: transparent;
+  color: var(--veryLightGray);
+}
+main .column_one a {
+  color: var(--brightOrange);
+}
+main .column_two a {
+  color: var(--darkCyan);
+}
+main .column_three a {
+  color: var(--veryDarkCyan);
+}
+@media only screen and (max-width: 768px) {
+  main {
+    width: 90%;
+    flex-direction: column;
+    margin: 30px 0;
+  }
+  main .col {
+    padding: 53px;
+  }
+  main .column_one {
+    border-radius: 10px 10px 0 0;
+  }
+  main .column_three {
+    border-radius: 0 0 10px 10px;
+  }
+}
