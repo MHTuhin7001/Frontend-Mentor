@@ -1,0 +1,22 @@
+@font-face {
+  font-family: "Hanken Grotesk";
+  src: url(HankenGrotesk/HankenGrotesk-Bold.eot) format("eot"),
+    url(HankenGrotesk/HankenGrotesk-Bold.svg#HankenGrotesk-Bold) format("svg"),
+    url(HankenGrotesk/HankenGrotesk-Bold.woff2) format("woff"),
+    url(HankenGrotesk/HankenGrotesk-Bold.ttf) format("truetype"),
+    url(HankenGrotesk/HankenGrotesk-ExtraBold.eot) format("eot"),
+    url(HankenGrotesk/HankenGrotesk-ExtraBold.svg#HankenGrotesk-ExtraBold)
+      format("svg"),
+    url(HankenGrotesk/HankenGrotesk-ExtraBold.woff2) format("woff"),
+    url(HankenGrotesk/HankenGrotesk-ExtraBold.ttf) format("truetype"),
+    url(HankenGrotesk/HankenGrotesk-Medium.eot) format("eot"),
+    url(HankenGrotesk/HankenGrotesk-Medium.svg#HankenGrotesk-Medium)
+      format("svg"),
+    url(HankenGrotesk/HankenGrotesk-Medium.woff2) format("woff"),
+    url(HankenGrotesk/HankenGrotesk-Medium.ttf) format("truetype"),
+    url(HankenGrotesk/HankenGrotesk-VariableFont_wght.eot) format("eot"),
+    url(HankenGrotesk/HankenGrotesk-VariableFont_wght.svg#HankenGrotesk-VariableFont_wght)
+      format("svg"),
+    url(HankenGrotesk/HankenGrotesk-VariableFont_wght.woff2) format("woff"),
+    url(HankenGrotesk/HankenGrotesk-VariableFont_wght.ttf) format("truetype");
+}
