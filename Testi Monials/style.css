@@ -1,0 +1,133 @@
+@import url("https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@500;600&display=swap");
+:root {
+  /* Fonts */
+  --primaryFont: "Barlow Semi Condensed", sans-serif;
+  /* Color */
+  --moderateViolet: hsl(263, 55%, 52%);
+  --veryDarkGrayishBlue: hsl(217, 19%, 35%);
+  --veryDarkBlackishBlue: hsl(219, 29%, 14%);
+  --white: hsl(0, 0%, 100%);
+  --lightGray: hsl(0, 0%, 81%);
+  --lightGrayishBlue: hsl(210, 46%, 95%);
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: var(--primaryFont);
+}
+img {
+  max-width: 100%;
+}
+p {
+  line-height: 1.15rem;
+}
+a {
+  text-decoration: none;
+}
+body {
+  width: 100%;
+  min-height: 100vh;
+  font-size: 13px;
+  background-color: var(--lightGrayishBlue);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#web_container {
+  width: 1110px;
+  display: grid;
+  grid-template: 280px 265px / repeat(4, 255px);
+  grid-row-gap: 25px;
+  grid-column-gap: 30px;
+}
+.profile_details {
+  padding: 25px 30px 30px 30px;
+  border-radius: 10px;
+}
+.profile_details .profile {
+  display: flex;
+  align-items: center;
+}
+.profile_details .profile .profile_img {
+  width: 32px;
+  border-radius: 100%;
+  margin-right: 15px;
+}
+.profile_details .profile .profile_name a {
+  opacity: 50%;
+}
+.profile_details h2 {
+  margin: 15px 0;
+}
+.profile_details p {
+  opacity: 70%;
+}
+/* Daniel Clifford Part */
+#web_container .daniel_clifford {
+  position: relative;
+  grid-column: 1/3;
+  color: var(--lightGray);
+  background-color: var(--moderateViolet);
+  z-index: -2;
+}
+.daniel_clifford .bg_qutation {
+  position: absolute;
+  top: 0;
+  right: 95px;
+  z-index: -1;
+}
+.daniel_clifford .profile .profile_img {
+  border: 2px solid #9a75d7;
+}
+.daniel_clifford .profile .profile_name a {
+  color: var(--lightGray);
+}
+/* Jonathan Walters Part */
+#web_container .jonathan_walters {
+  color: var(--lightGrayishBlue);
+  background-color: var(--veryDarkGrayishBlue);
+}
+.jonathan_walters .profile .profile_name a {
+  color: var(--lightGrayishBlue);
+}
+/* Kira Whittle Part */
+#web_container .kira_whittle {
+  grid-column: 4/5;
+  grid-row: 1/3;
+  color: var(--veryDarkGrayishBlue);
+  background-color: var(--white);
+}
+.kira_whittle .profile .profile_name a {
+  color: var(--veryDarkGrayishBlue);
+}
+/* Jeanette Harmon Part */
+#web_container .jeanette_harmon {
+  color: var(--veryDarkGrayishBlue);
+  background-color: var(--white);
+}
+.jeanette_harmon .profile .profile_name a {
+  color: var(--veryDarkGrayishBlue);
+}
+/* Patrick Abrams Part */
+#web_container .patrick_abrams {
+  grid-column: 2/4;
+  color: var(--lightGrayishBlue);
+  background-color: var(--veryDarkBlackishBlue);
+}
+.patrick_abrams .profile .profile_img {
+  border: 2px solid var(--moderateViolet);
+}
+.patrick_abrams .profile .profile_name a {
+  color: var(--lightGrayishBlue);
+}
+@media only screen and (max-width: 1100px) {
+  #web_container {
+    display: block;
+    width: 90%;
+    margin-top: 25px;
+  }
+  #web_container .profile_details {
+    margin-bottom: 25px;
+  }
+}
