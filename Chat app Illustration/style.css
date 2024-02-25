@@ -1,0 +1,294 @@
+@import url("https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap");
+:root {
+  /* Fonts */
+  --primaryFont: "Rubik", sans-serif;
+  /* Colors */
+  --paleViolet: hsl(276, 100%, 81%);
+  --moderateViolet: hsl(276, 55%, 52%);
+  --desaturatedDarkViolet: hsl(271, 15%, 43%);
+  --grayishBlue: hsl(206, 6%, 79%);
+  --veryDarkDesaturatedViolet: hsl(271, 36%, 24%);
+  --darkGrayishViolet: hsl(270, 7%, 64%);
+  --white: hsl(0, 0%, 100%);
+  --lightGrayishViolet: hsl(270, 20%, 96%);
+  --veryDarkDesaturatedViolet: hsl(271, 36%, 24%);
+  --veryLightMagenta: hsl(289, 100%, 72%);
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: var(--primaryFont);
+}
+img {
+  max-width: 100%;
+}
+button {
+  border: none;
+  background: transparent;
+  cursor: pointer;
+  color: var(--white);
+}
+body {
+  width: 100%;
+  min-height: 100vh;
+  position: relative;
+  font-size: 16px;
+  background-color: var(--white);
+  display: flex;
+  justify-content: space-around;
+}
+/* Background Bubble Design Section */
+.left_bubble {
+  position: absolute;
+  width: 520px;
+  height: 600px;
+  background: linear-gradient(
+    35deg,
+    hsl(264deg 100% 61%) 0%,
+    hsl(267deg 100% 61%) 34%,
+    hsl(270deg 100% 61%) 53%,
+    hsl(274deg 100% 62%) 66%,
+    hsl(277deg 100% 62%) 75%,
+    hsl(280deg 100% 62%) 83%,
+    hsl(283deg 100% 62%) 89%,
+    hsl(286deg 100% 63%) 94%,
+    hsl(290deg 100% 63%) 98%,
+    hsl(293deg 100% 63%) 100%
+  );
+  left: -100px;
+  border-radius: 0 0 500px 500px;
+  z-index: -1;
+}
+.right_bubble {
+  position: absolute;
+  width: 420px;
+  height: 600px;
+  background: linear-gradient(
+    35deg,
+    hsl(293deg 100% 63%) 0%,
+    hsl(290deg 100% 63%) 3%,
+    hsl(286deg 100% 63%) 7%,
+    hsl(283deg 100% 62%) 12%,
+    hsl(280deg 100% 62%) 18%,
+    hsl(277deg 100% 62%) 27%,
+    hsl(274deg 100% 62%) 37%,
+    hsl(270deg 100% 61%) 50%,
+    hsl(267deg 100% 61%) 67%,
+    hsl(264deg 100% 61%) 94%
+  );
+  right: 0;
+  bottom: 0;
+  border-top-left-radius: 500px;
+  opacity: 3%;
+  z-index: -1;
+}
+/* Full Web Container */
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+/* Phone View Section */
+main section {
+  width: 250px;
+  position: relative;
+  background-color: var(--lightGrayishViolet);
+  border: 10px solid var(--white);
+  display: flex;
+  flex-direction: column;
+  border-radius: 25px;
+  box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 40px;
+}
+section .notch {
+  position: absolute;
+  width: 130px;
+  height: 18px;
+  background-color: var(--white);
+  border-radius: 0 0 15px 15px;
+  left: 50px;
+}
+/* Phone Profile Part */
+section .profile_details {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: var(--white);
+  padding: 30px 15px 10px 15px;
+  border-radius: 15px 15px 5px 5px;
+  background: linear-gradient(
+    90deg,
+    hsl(264deg 100% 61%) 0%,
+    hsl(266deg 100% 61%) 6%,
+    hsl(267deg 100% 61%) 12%,
+    hsl(268deg 100% 61%) 18%,
+    hsl(270deg 100% 61%) 24%,
+    hsl(271deg 100% 61%) 30%,
+    hsl(272deg 100% 62%) 36%,
+    hsl(274deg 100% 62%) 41%,
+    hsl(275deg 100% 62%) 47%,
+    hsl(277deg 100% 62%) 52%,
+    hsl(278deg 100% 62%) 57%,
+    hsl(279deg 100% 62%) 63%,
+    hsl(281deg 100% 62%) 67%,
+    hsl(282deg 100% 62%) 72%,
+    hsl(283deg 100% 62%) 77%,
+    hsl(285deg 100% 62%) 81%,
+    hsl(286deg 100% 63%) 85%,
+    hsl(287deg 100% 63%) 89%,
+    hsl(289deg 100% 63%) 93%,
+    hsl(290deg 100% 63%) 96%,
+    hsl(292deg 100% 63%) 99%,
+    hsl(293deg 100% 63%) 100%
+  );
+}
+.profile_details .profile {
+  display: flex;
+  align-items: center;
+}
+.profile .profile_img {
+  width: 22px;
+  margin: 0 8px;
+  border: 1px solid var(--white);
+  border-radius: 50%;
+}
+.profile .profile_name p {
+  font-size: 0.5rem;
+  color: var(--paleViolet);
+  margin-top: 3px;
+}
+/* Phone Chat Part */
+section .chats_view {
+  font-size: 0.55rem;
+  background-color: var(--lightGrayishViolet);
+  padding: 10px 8px;
+  border-radius: 0 0 15px 15px;
+  display: flex;
+  flex-direction: column;
+}
+.chats_view .text {
+  padding: 8px;
+  margin-bottom: 8px;
+  line-height: 1.25em;
+  width: 65%;
+}
+.chats_view .incoming {
+  color: var(--moderateViolet);
+  background-color: hsl(271, 41%, 90%);
+  border-radius: 10px 10px 10px 5px;
+}
+.chats_view .outgoing_images {
+  text-align: end;
+  margin: 8px 0 4px 0;
+}
+.chats_view .outgoing_images img {
+  width: 40px;
+  border-radius: 10px;
+  margin-left: 4px;
+}
+.chats_view .outgoing {
+  color: var(--desaturatedDarkViolet);
+  background-color: var(--white);
+  border-radius: 10px 10px 5px 10px;
+  margin-left: calc(100% - 65%);
+}
+.chats_view .msg {
+  width: 40%;
+  margin-left: calc(100% - 40%);
+}
+/* Phone Time Selection Part */
+.chats_view .selecting_option {
+  width: 80%;
+  color: var(--white);
+  padding: 8px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: linear-gradient(
+    90deg,
+    hsl(293deg 100% 63%) 0%,
+    hsl(290deg 100% 63%) 11%,
+    hsl(286deg 100% 63%) 20%,
+    hsl(283deg 100% 62%) 29%,
+    hsl(280deg 100% 62%) 38%,
+    hsl(277deg 100% 62%) 48%,
+    hsl(274deg 100% 62%) 58%,
+    hsl(270deg 100% 61%) 70%,
+    hsl(267deg 100% 61%) 83%,
+    hsl(264deg 100% 61%) 100%
+  );
+  border-radius: 10px 10px 10px 5px;
+  margin-bottom: 8px;
+}
+.selecting_option input[type="radio"]:after {
+  content: "";
+  width: 12px;
+  height: 12px;
+  border-radius: 15px;
+  position: relative;
+  top: -1px;
+  background-color: hsl(290deg 100% 63%);
+  display: inline-block;
+  border: 1px solid var(--veryLightMagenta);
+}
+.selecting_option input[type="radio"]:checked:after {
+  content: "";
+  background-color: var(--white);
+}
+/* Phone Chat Writing Part */
+.chats_view .submit_chat {
+  position: relative;
+  display: flex;
+  align-items: center;
+  margin-top: 8px;
+}
+.submit_chat input {
+  width: 100%;
+  height: 35px;
+  border: none;
+  border-radius: 30px;
+}
+.submit_chat input::placeholder {
+  font-size: 0.55rem;
+  color: var(--grayishBlue);
+  padding-left: 20px;
+}
+.submit_chat .submit_btn {
+  position: absolute;
+  padding: 6px 10px 7px 11px;
+  background-color: var(--veryDarkDesaturatedViolet);
+  right: 5px;
+  border-radius: 30px;
+}
+/* Simple Booking Section */
+main article {
+  flex-basis: 450px;
+  margin-left: 125px;
+}
+article h2 {
+  font-size: 2.25rem;
+  font-weight: 500;
+  color: var(--veryDarkDesaturatedViolet);
+  margin-bottom: 30px;
+}
+article p {
+  color: var(--darkGrayishViolet);
+  line-height: 1.7em;
+}
+@media only screen and (max-width: 992px) {
+  .left_bubble {
+    left: -320px;
+  }
+  .right_bubble {
+    width: 200px;
+  }
+  main {
+    width: 81%;
+    flex-direction: column;
+    margin-top: 150px;
+  }
+  main article {
+    margin: 70px 0 0 0;
+    text-align: center;
+  }
+}
