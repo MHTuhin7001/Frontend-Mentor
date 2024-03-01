@@ -1,0 +1,336 @@
+/* Fonts Links */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap");
+:root {
+  /* Fonts */
+  --headingFont: "Poppins", sans-serif;
+  --bodyFont: "Open Sans", sans-serif;
+  /* Colors */
+  --pink: hsl(322, 100%, 66%);
+  --lightPink: hsl(321, 100%, 78%);
+  --lightRed: hsl(0, 100%, 63%);
+  --veryDarkCyan: hsl(192, 100%, 9%);
+  --veryPaleBlue: hsl(207, 100%, 98%);
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--headingFont);
+}
+p {
+  line-height: 1.5em;
+}
+a {
+  text-decoration: none;
+}
+img {
+  max-width: 100%;
+  vertical-align: middle;
+}
+body {
+  width: 100%;
+  font-family: var(--bodyFont);
+}
+/* Header Part */
+header {
+  width: 90.5%;
+  margin: 78px auto 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+/* Try it Free Button */
+.try_it_btn a {
+  color: var(--pink);
+  padding: 10px 30px;
+  border: 1px solid var(--pink);
+  border-radius: 25px;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+.try_it_btn a:active {
+  color: var(--lightPink);
+  border: 1px solid var(--lightPink);
+}
+
+/* Section Part */
+section {
+  width: 72.5%;
+  color: var(--veryDarkCyan);
+  margin: 220px auto 135px;
+  text-align: center;
+}
+/* Community Guide */
+.community_guide h2 {
+  font-size: 3rem;
+}
+.community_guide p {
+  width: 58%;
+  font-size: 1.25rem;
+  margin: 20px auto 45px;
+}
+.get_started_btn {
+  font-size: 1.3rem;
+  display: inline-block;
+  font-weight: 600;
+  color: var(--veryPaleBlue);
+  padding: 30px 100px;
+  margin-bottom: 110px;
+  background: var(--pink);
+  border-radius: 50px;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+.get_started_btn:active {
+  background: var(--lightPink);
+}
+/* Overview */
+.overview {
+  width: 84%;
+  margin: 125px auto 0;
+  display: flex;
+  justify-content: space-between;
+}
+.icon {
+  text-align: left;
+}
+.icon img {
+  width: 40px;
+}
+.activity p {
+  font-size: 5.7rem;
+  font-weight: 700;
+}
+.activity span {
+  font-size: 1.5rem;
+  opacity: 55%;
+}
+/* Article Part */
+article {
+  color: var(--veryDarkCyan);
+}
+.curved_bg .desktop_bg {
+  width: 100%;
+}
+.curved_bg .mobile_bg {
+  display: none;
+}
+.community {
+  width: 81%;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.illustration {
+  flex-basis: 45%;
+}
+.description {
+  flex-basis: 45%;
+}
+.description h2 {
+  font-size: 2.5rem;
+  margin-bottom: 25px;
+}
+/* Grow Together */
+.grow_together_bg {
+  background: var(--veryPaleBlue);
+  padding: 70px 0 50px;
+}
+/* Flowing Conversations */
+.flowing_conversations {
+  padding: 188px 0 112px;
+}
+/* Your Users */
+.your_users_bg {
+  background: var(--veryPaleBlue);
+  padding: 40px 0;
+}
+/* Ready to Build Community */
+.ready_build {
+  text-align: center;
+  margin: 162px 0 178px;
+}
+.ready_build h2 {
+  font-size: 2.5rem;
+  margin-bottom: 38px;
+}
+/* Footer Part */
+.contact_us_bg {
+  color: var(--veryPaleBlue);
+  background: var(--veryDarkCyan);
+  padding: 100px 0;
+}
+.contact_us {
+  width: 84%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+}
+/* About Us */
+.about_us {
+  flex-basis: 28%;
+}
+.about_us svg {
+  fill: var(--veryPaleBlue);
+}
+.title {
+  display: flex;
+  align-items: center;
+}
+.footer_logo svg {
+  width: 46px;
+  height: 40px;
+}
+.footer_logo h2 {
+  font-size: 3.15rem;
+  margin-left: 10px;
+}
+.about_description p {
+  font-size: 0.92rem;
+  line-height: 1.7em;
+}
+.title p {
+  margin-left: 18px;
+}
+.phone {
+  margin: 28px 0 18px;
+}
+.social ul {
+  list-style-type: none;
+  display: flex;
+  margin-top: 78px;
+}
+.social svg {
+  width: 36px;
+}
+.social ul li {
+  margin-right: 23px;
+}
+.social ul li:nth-child(1) svg:hover {
+  fill: hsl(221, 92%, 58%);
+}
+.social ul li:nth-child(2) svg:hover {
+  fill: hsl(340, 75%, 54%);
+}
+.social ul li:nth-child(3) svg:hover {
+  fill: hsl(203, 89%, 53%);
+}
+.sign_up {
+  flex-basis: 44%;
+  margin-top: 20px;
+}
+.sign_up .about_description {
+  width: 65%;
+  margin: 17px 0 40px;
+}
+.sign_up form {
+  display: flex;
+}
+form input {
+  width: 318px;
+  outline: none;
+  padding: 14px;
+  margin-right: 40px;
+  border-radius: 7px;
+}
+.sign_up .error {
+  color: var(--lightRed);
+  font-size: 0.79rem;
+  margin-top: 7px;
+  display: none;
+}
+form button {
+  color: var(--veryPaleBlue);
+  font-weight: 600;
+  background: var(--pink);
+  border: none;
+  cursor: pointer;
+  padding: 16px 48px;
+  border-radius: 7px;
+}
+form button:active {
+  background: var(--lightPink);
+}
+/* Reponsives */
+@media screen and (max-width: 920px) {
+  .overview {
+    flex-direction: column;
+  }
+  .icon {
+    text-align: center;
+  }
+  .messages {
+    margin-top: 120px;
+  }
+  .contact_us {
+    flex-direction: column;
+  }
+  .about_us {
+    order: 2;
+    margin-top: 100px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .community {
+    flex-direction: column;
+    text-align: center;
+  }
+  .description {
+    margin: 100px 0;
+  }
+}
+@media screen and (max-width: 576px) {
+  .header_logo {
+    width: 150px;
+  }
+  .try_it_btn a {
+    font-size: 0.6rem;
+  }
+  section {
+    width: 90.5%;
+  }
+  .community_guide h2 {
+    font-size: 1.75rem;
+  }
+  .community_guide p {
+    width: 100%;
+    font-size: 1rem;
+  }
+  .get_started_btn {
+    font-size: 1rem;
+    padding: 20px 60px;
+  }
+  .icon {
+    text-align: left;
+  }
+  .curved_bg .desktop_bg {
+    display: none;
+  }
+  .curved_bg .mobile_bg {
+    width: 100%;
+    display: block;
+  }
+  .description h2 {
+    font-size: 1.5rem;
+  }
+  .description p {
+    font-size: 0.55rem;
+  }
+  .ready_build h2 {
+    font-size: 1.5rem;
+  }
+  .sign_up form {
+    display: block;
+    text-align: right;
+  }
+  form button {
+    margin-top: 15px;
+  }
+}
