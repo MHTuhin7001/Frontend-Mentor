@@ -1,0 +1,264 @@
+@import url("https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@400;600&display=swap");
+:root {
+  /* Fonts*/
+  --primaryfont: "Bai Jamjuree", sans-serif;
+  /* Colors */
+  --strongCyan: hsl(171, 66%, 44%);
+  --lightBlue: hsl(233, 100%, 69%);
+  --darkGrayishBlue: hsl(210, 10%, 33%);
+  --grayishBlue: hsl(201, 11%, 66%);
+}
+* {
+  margin: 0;
+  padding: 0;
+  font-family: var(--primaryfont);
+  box-sizing: border-box;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: var(--darkGrayishBlue);
+}
+p {
+  line-height: 1.5em;
+  color: var(--grayishBlue);
+}
+a {
+  text-decoration: none;
+  color: var(--darkGrayishBlue);
+}
+img {
+  max-width: 100%;
+}
+body {
+  font-size: 18px;
+  text-align: center;
+  background: linear-gradient(rgb(255 255 255 / 0%), rgb(255 255 255 / 0%)),
+    url(photo/bg-header-desktop.png) no-repeat;
+  background-size: 100%;
+}
+/* Header Part */
+header {
+  width: 48%;
+  margin: 130px auto 150px;
+}
+.head_description h1 {
+  font-size: 2.77rem;
+  margin: 50px 0 20px;
+}
+.head_description p {
+  font-size: 1.26rem;
+}
+.links_btn a {
+  display: inline-block;
+  font-size: 1.18rem;
+  font-weight: 600;
+  color: white;
+  margin-top: 50px;
+  padding: 20px 40px;
+  border-radius: 30px;
+}
+.links_btn .ios {
+  background: var(--strongCyan);
+  box-shadow: -2px -11px 0 -8px #1e9482 inset;
+  margin-right: 6px;
+}
+.links_btn .ios:hover {
+  background: #2bd4ba;
+  box-shadow: -2px -11px 0 -8px var(--strongCyan) inset;
+}
+.links_btn .mac {
+  background: var(--lightBlue);
+  box-shadow: -2px -11px 0 -8px #334bff inset;
+  margin-left: 6px;
+}
+.links_btn .mac:hover {
+  background: #808eff;
+  box-shadow: -2px -11px 0 -8px var(--lightBlue) inset;
+}
+/* section Part */
+.description {
+  width: 48.5%;
+  margin: 0 auto;
+}
+.description h2 {
+  font-size: 2.17rem;
+  margin-bottom: 23px;
+}
+.mac_view {
+  margin: 83px 0 147px;
+  display: flex;
+  align-items: center;
+}
+.mac_computer {
+  position: relative;
+  width: 58%;
+  height: 577px;
+}
+.mac_computer img {
+  position: absolute;
+  left: -31px;
+}
+.mac_about {
+  flex-basis: 25%;
+  text-align: left;
+  margin-left: 90px;
+}
+.mac_about .about {
+  margin-top: 60px;
+}
+.mac_about .about:first-child {
+  margin-top: 0;
+}
+.about h3 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+.about p {
+  font-size: 1.03rem;
+  line-height: 1.75em;
+}
+.devices_view .phones {
+  margin: 100px 0 60px;
+}
+.devices_about {
+  width: 77%;
+  margin: 75px auto 155px;
+  display: flex;
+  justify-content: space-between;
+}
+.devices_about .about {
+  flex-basis: 32%;
+}
+.devices_about .about:nth-child(1) img {
+  margin-bottom: 40px;
+}
+.devices_about .about:nth-child(2) img {
+  margin-bottom: 48px;
+}
+.devices_about .about:nth-child(3) img {
+  margin-bottom: 48px;
+}
+/* Article Part */
+.companies {
+  width: 78%;
+  margin: 0 auto 158px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+/* Footer Part */
+footer {
+  background: #f1f3f4;
+  margin-top: 152px;
+  padding: 40px 0;
+}
+.footer_bg {
+  width: 79%;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.footer_logo img {
+  width: 56px;
+}
+.pages {
+  text-align: left;
+  display: grid;
+  grid-template: auto auto / auto auto auto;
+  grid-row-gap: 20px;
+  grid-column-gap: 80px;
+}
+.pages a:hover {
+  color: var(--strongCyan);
+}
+.social_area ul {
+  list-style-type: none;
+  display: flex;
+  align-items: center;
+}
+.social_area ul li {
+  margin-right: 23px;
+}
+ul li a svg {
+  fill: #4c545c;
+}
+ul li a svg:hover {
+  fill: var(--strongCyan);
+}
+@media screen and (max-width: 992px) {
+  * {
+    text-align: center;
+  }
+  header {
+    width: 100%;
+  }
+  .mac_view {
+    flex-direction: column;
+  }
+  .mac_computer {
+    width: 90%;
+    height: auto;
+  }
+  .mac_computer img {
+    position: static;
+  }
+  .mac_about {
+    margin: 80px 0 0;
+  }
+  .devices_about {
+    flex-direction: column;
+  }
+  .devices_about .about {
+    margin-top: 50px;
+  }
+  .companies {
+    width: 90%;
+    flex-direction: column;
+  }
+  .companies img {
+    margin-bottom: 80px;
+  }
+  .companies img:last-child {
+    margin-bottom: 0;
+  }
+  .footer_bg {
+    flex-direction: column;
+  }
+  .pages {
+    display: block;
+    margin: 20px 0 50px;
+  }
+  .pages a {
+    display: block;
+    margin-top: 30px;
+  }
+}
+@media screen and (max-width: 576px) {
+  body {
+    background: linear-gradient(rgb(255 255 255 / 0%), rgb(255 255 255 / 0%)),
+      url(photo/bg-header-mobile.png) no-repeat;
+    background-size: 100%;
+  }
+  .links_btn {
+    margin: 80px auto 0;
+    width: 75%;
+  }
+  .links_btn a {
+    display: block;
+    margin-top: 20px;
+  }
+  .links_btn .ios {
+    margin-right: 0;
+  }
+  .links_btn .mac {
+    margin-left: 0;
+  }
+  .description {
+    width: 90%;
+  }
+}
