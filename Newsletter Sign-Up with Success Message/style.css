@@ -1,0 +1,144 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
+:root {
+  /* Fonts */
+  --primaryFont: "Roboto", sans-serif;
+  /* Colors */
+  --tomato: hsl(4, 100%, 67%);
+  --darkSlateGrey: hsl(234, 29%, 20%);
+  --charcoalGrey: hsl(235, 18%, 26%);
+  --grey: hsl(231, 7%, 60%);
+  --white: hsl(0, 0%, 100%);
+}
+* {
+  margin: 0;
+  padding: 0;
+  font-family: var(--primaryFont);
+  box-sizing: border-box;
+}
+h1 {
+  font-size: 3.5rem;
+}
+.card {
+  background: var(--white);
+  border-radius: 20px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+.mobileImg {
+  display: none;
+}
+.btn {
+  width: 100%;
+  padding: 20px 0;
+  color: var(--white);
+  font-weight: 700;
+  background: var(--darkSlateGrey);
+  cursor: pointer;
+  border: none;
+  border-radius: 10px;
+}
+.btn:active {
+  background: linear-gradient(
+    90deg,
+    rgba(255, 84, 120, 1) 0%,
+    rgba(255, 105, 62, 1) 100%
+  );
+}
+body {
+  min-height: 100vh;
+  font-size: 16px;
+  color: var(--darkSlateGrey);
+  background: var(--charcoalGrey);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+/* Main Card Wrapper */
+.main {
+  width: 930px;
+  padding: 25px;
+  display: flex;
+}
+/* Card Left Side */
+.leftSide {
+  padding: 70px 65px 70px 40px;
+}
+.leftSide .details {
+  line-height: 1.5em;
+  margin: 21px 0 27px;
+}
+.leftSide .detailsList {
+  display: flex;
+}
+.leftSide .detailsList p {
+  line-height: 1.92em;
+  margin-left: 15px;
+}
+.leftSide form {
+  margin-top: 40px;
+}
+.leftSide form .formTitle {
+  display: flex;
+  justify-content: space-between;
+}
+.leftSide form .formTitle p {
+  font-size: 0.75rem;
+  font-weight: 700;
+}
+.leftSide form .formTitle .errorMsg {
+  color: var(--tomato);
+}
+.leftSide form input {
+  display: block;
+  width: 100%;
+  padding: 20px 12px;
+  margin: 10px 0 23px;
+  border-radius: 10px;
+  border: 1px solid;
+}
+/* Success Card */
+.success {
+  width: 505px;
+  padding: 48px 64px 64px;
+}
+.success h1 {
+  line-height: 1em;
+  margin: 35px 0 25px;
+}
+.success p {
+  line-height: 1.5em;
+  margin-bottom: 40px;
+}
+.hidden {
+  display: none;
+}
+/* Responsives */
+@media only screen and (max-width: 768px) {
+  h1 {
+    font-size: 2.5rem;
+  }
+  .card {
+    border-radius: 0;
+  }
+  .main {
+    flex-direction: column;
+    padding: 0;
+  }
+  .desktopImg {
+    display: none;
+  }
+  .mobileImg {
+    display: block;
+    width: 100%;
+  }
+  .leftSide {
+    order: 2;
+    padding: 30px;
+  }
+  .success {
+    min-height: 100vh;
+    padding: 150px 25px 0;
+  }
+  .success p {
+    padding-bottom: 180px;
+  }
+}

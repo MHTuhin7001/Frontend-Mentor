@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Newsletter Sign-Up with Success Message</title>
+    <!-- Favicon -->
+    <link
+      rel="shortcut icon"
+      href="Photo/favicon-32x32.png"
+      type="image/x-icon"
+    />
+    <!-- Style CSS -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- Main Card Wrapper -->
+    <div class="main card">
+      <!-- Card Left Side -->
+      <div class="leftSide">
+        <h1>Stay updated!</h1>
+        <p class="details">
+          Join 60,000+ product managers receiving monthly updates on:
+        </p>
+        <div class="detailsList">
+          <img src="Photo/icon-list.svg" alt="List Icon Image" />
+          <p>Product discovery and building what matters</p>
+        </div>
+        <div class="detailsList">
+          <img src="Photo/icon-list.svg" alt="List Icon Image" />
+          <p>Measuring to ensure updates are a success</p>
+        </div>
+        <div class="detailsList">
+          <img src="Photo/icon-list.svg" alt="List Icon Image" />
+          <p>And Much More!</p>
+        </div>
+        <form>
+          <div class="formTitle">
+            <p>Email address</p>
+            <p class="errorMsg hidden">Valid email required</p>
+          </div>
+
+          <input type="text" placeholder="email@company.com" />
+          <button class="btn">Subscribe to monthly newsletter</button>
+        </form>
+      </div>
+      <!-- Card Right Side -->
+      <div class="rightSide">
+        <img
+          src="Photo/illustration-sign-up-desktop.svg"
+          alt="Desktop Illustration Image"
+          class="desktopImg"
+        />
+        <img
+          src="Photo/illustration-sign-up-mobile.svg"
+          alt="Mobile Illustration Image"
+          class="mobileImg"
+        />
+      </div>
+    </div>
+    <!-- Success Card -->
+    <div class="success card hidden">
+      <img src="Photo/icon-success.svg" alt="Success Icon Image" />
+      <h1>Thanks for subscribing!</h1>
+      <p>
+        A confirmation email has been sent to
+        <strong>ash@loremcompany.com.</strong> Please open it and click the
+        button inside to confirm your subscription.
+      </p>
+      <button class="btn close" onclick="modalClose()">Dismiss message</button>
+    </div>
+    <!-- Calling JS -->
+    <script src="script.js"></script>
+  </body>
+</html>
