@@ -1,0 +1,119 @@
+@import url("https://fonts.googleapis.com/css2?family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&display=swap");
+:root {
+  /* Fonts */
+  --primaryFont: "Red Hat Display", sans-serif;
+  /* Colors */
+  --paleBlue: hsl(225, 100%, 94%);
+  --brightBlue: hsl(245, 75%, 52%);
+  --veryPaleBlue: hsl(225, 100%, 98%);
+  --desaturatedBlue: hsl(224, 23%, 55%);
+  --darkBlue: hsl(223, 47%, 23%);
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: var(--primaryFont);
+}
+h2,
+h4 {
+  color: var(--darkBlue);
+  font-weight: 900;
+}
+p,
+span {
+  color: var(--desaturatedBlue);
+  font-weight: 500;
+}
+a {
+  font-weight: 700;
+}
+img {
+  max-width: 100%;
+}
+body {
+  min-height: 100vh;
+  font-size: 16px;
+  background-image: url(image/pattern-background-desktop.svg);
+  background-color: var(--paleBlue);
+  background-repeat: no-repeat;
+  background-size: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+/* Full Card Wrapper */
+.cardWrapper {
+  width: 450px;
+  background: white;
+  border-radius: 18px;
+  text-align: center;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px,
+    rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+}
+/* Top Illustration Image */
+.illustration img {
+  vertical-align: middle;
+  border-radius: 18px 18px 0 0;
+}
+/* Bottom Full Price Details */
+.priceDetails {
+  padding: 45px 48px;
+}
+.priceDetails h2 {
+  font-size: 1.8rem;
+}
+.priceDetails p {
+  line-height: 1.55em;
+  margin: 20px;
+}
+/* Music Price Box */
+.musicPrice {
+  background-color: var(--veryPaleBlue);
+  padding: 23px;
+  border-radius: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.pricePlan {
+  display: flex;
+}
+.planAmount {
+  margin-left: 20px;
+}
+.planAmount h4 {
+  margin-bottom: 5px;
+}
+.musicPrice a {
+  color: var(--brightBlue);
+}
+/* Payment Buttons */
+.priceDetails .payment {
+  display: block;
+  text-decoration: none;
+  color: white;
+  background: var(--brightBlue);
+  margin: 32px 0 35px;
+  padding: 17px 0;
+  border-radius: 10px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px,
+    rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+}
+.priceDetails .cancel {
+  text-decoration: none;
+  color: var(--desaturatedBlue);
+}
+/* Responsives */
+@media screen and (max-width: 450px) {
+  body {
+    background-image: url(image/pattern-background-mobile.svg);
+  }
+  .cardWrapper {
+    width: 90%;
+    margin: 50px 0;
+  }
+  .priceDetails {
+    padding: 28px 17px;
+  }
+}
